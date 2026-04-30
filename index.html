@@ -17,7 +17,7 @@ header{
 display:flex;justify-content:space-between;
 padding:20px 7%;
 background:#081326;
-position:sticky;top:0;z-index:999;
+position:sticky;top:0;
 }
 .logo{font-size:28px;font-weight:bold}
 .logo span{color:#22c55e}
@@ -40,17 +40,11 @@ border-radius:8px;
 text-decoration:none;
 margin-right:10px;
 display:inline-block;
-transition:0.3s;
 }
 .btn-primary{background:#22c55e;color:#081326}
 .btn-secondary{border:1px solid #fff;color:#fff}
 
-.btn:hover{
-transform:translateY(-3px) scale(1.05);
-box-shadow:0 10px 20px rgba(0,0,0,0.3);
-}
-
-/* IMAGE */
+/* HERO IMAGE */
 .hero img{
 width:100%;
 border-radius:12px;
@@ -74,27 +68,14 @@ gap:20px;
 background:#0f1d38;
 padding:20px;
 border-radius:10px;
-transition:0.3s;
-}
-.card:hover{
-transform:translateY(-5px);
-border:1px solid #22c55e;
 }
 
-/* IMAGE CENTER */
-.center-img{
-width:60%;
+/* ABOUT IMAGE */
+.about-img{
+width:70%;
 display:block;
-margin:0 auto 30px;
+margin:40px auto;
 border-radius:12px;
-}
-
-/* TESTIMONIAL */
-.testimonial{
-background:#0f1d38;
-padding:20px;
-border-radius:10px;
-margin-bottom:15px;
 }
 
 /* CONTACT */
@@ -104,28 +85,6 @@ grid-template-columns:1fr 1fr;
 gap:30px;
 }
 
-/* ANIMATION */
-.fade{
-opacity:0;
-transform:translateY(40px);
-transition:1s;
-}
-.fade.show{
-opacity:1;
-transform:translateY(0);
-}
-
-/* CTA */
-.cta{
-text-align:center;
-padding:60px;
-background:#22c55e;
-color:#081326;
-border-radius:12px;
-margin:40px 7%;
-}
-
-/* WHATSAPP */
 .whatsapp{
 position:fixed;
 right:20px;
@@ -157,10 +116,10 @@ color:#081326;
 </header>
 
 <!-- HERO -->
-<section class="hero fade">
+<section class="hero">
 <div>
-<h1>Get More Clients With Verified Leads</h1>
-<p>We help businesses generate high-quality leads worldwide.</p>
+<h1>Get More Clients With Manually Verified Leads</h1>
+<p>We help businesses worldwide generate organic, manually researched and verified leads.</p>
 
 <a href="#" class="btn btn-primary">Get Free Consultation</a>
 <a href="#" class="btn btn-secondary">Send Inquiry</a>
@@ -173,39 +132,34 @@ color:#081326;
 </section>
 
 <!-- SERVICES -->
-<section class="fade">
-<img class="center-img" src="https://i.postimg.cc/QCRb9hfs/k-DXJUTRCo-S2WFhiq-HK-P5o2Ag5PTt-Erw-RPr-ZIk3p-H0vh-Qskoxsta-AI5Vnn1Ux-QJDe-WYk-M0Ztie-Cf-N2uql-Wp-B.jpg">
-
+<section id="services">
 <h2 class="title">Our Services</h2>
-<p class="sub">Growth-focused solutions for modern businesses.</p>
+<p class="sub">We provide lead generation across multiple industries worldwide.</p>
 
 <div class="grid">
 <div class="card">Lead Generation</div>
 <div class="card">B2B Leads</div>
-<div class="card">Real Estate Leads</div>
-<div class="card">Insurance Leads</div>
+<div class="card">Real Estate</div>
+<div class="card">Insurance</div>
+<div class="card">Solar</div>
+<div class="card">Furniture</div>
+<div class="card">Manufacturing</div>
+<div class="card">Import Export</div>
 </div>
 </section>
 
-<!-- TESTIMONIAL -->
-<section class="fade">
-<h2 class="title">What Clients Say</h2>
+<!-- ABOUT -->
+<section id="about">
+<h2 class="title">About Us</h2>
+<p class="sub">
+We help businesses connect with real opportunities through verified leads and global outreach strategies.
+</p>
 
-<div class="testimonial">“We got quality leads within days.”</div>
-<div class="testimonial">“Highly recommended for B2B growth.”</div>
-<div class="testimonial">“Professional and reliable service.”</div>
-
+<img class="about-img" src="https://i.postimg.cc/QCRb9hfs/k-DXJUTRCo-S2WFhiq-HK-P5o2Ag5PTt-Erw-RPr-ZIk3p-H0vh-Qskoxsta-AI5Vnn1Ux-QJDe-WYk-M0Ztie-Cf-N2uql-Wp-B.jpg">
 </section>
-
-<!-- CTA -->
-<div class="cta">
-<h2>Ready to Grow Your Business?</h2>
-<p>Start getting high-quality leads today.</p>
-<a href="#" class="btn btn-primary">Get Started</a>
-</div>
 
 <!-- CONTACT -->
-<section class="fade">
+<section>
 <h2 class="title">Contact Us</h2>
 
 <div class="contact-wrap">
@@ -229,18 +183,6 @@ color:#081326;
 </footer>
 
 <a class="whatsapp" href="https://wa.me/919406619855">Chat Now</a>
-
-<script>
-const faders=document.querySelectorAll(".fade");
-window.addEventListener("scroll",()=>{
-faders.forEach(el=>{
-const top=el.getBoundingClientRect().top;
-if(top<window.innerHeight-100){
-el.classList.add("show");
-}
-});
-});
-</script>
 
 </body>
 </html>
