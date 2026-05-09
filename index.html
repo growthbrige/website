@@ -149,6 +149,67 @@ border-color .45s ease;
 position:relative;
 overflow:hidden;
 }
+.about-grid{
+display:grid;
+grid-template-columns:1.2fr 0.8fr;
+gap:40px;
+align-items:center;
+margin-top:50px;
+}
+
+.about-text{
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(14px);
+padding:40px;
+border-radius:28px;
+border:1px solid rgba(34,197,94,0.12);
+box-shadow:0 10px 40px rgba(15,23,42,0.08);
+}
+
+.about-text h3{
+font-size:34px;
+margin-bottom:22px;
+color:#0f172a;
+line-height:1.3;
+}
+
+.about-text p{
+font-size:17px;
+line-height:1.9;
+color:#334155;
+margin-bottom:20px;
+}
+
+.about-stats{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+
+.stat-card{
+background:linear-gradient(135deg,#0f172a,#112240);
+padding:28px;
+border-radius:24px;
+color:white;
+text-align:center;
+box-shadow:0 10px 30px rgba(15,23,42,0.18);
+transition:.35s ease;
+}
+
+.stat-card:hover{
+transform:translateY(-6px);
+}
+
+.stat-card h3{
+font-size:34px;
+color:#22c55e;
+margin-bottom:8px;
+}
+
+.stat-card p{
+font-size:15px;
+opacity:.9;
+}
 .strip{
 display:flex;
 justify-content:center;
@@ -350,6 +411,48 @@ We help businesses worldwide generate manually researched, verified and high-int
 <p class="sub">
 We bridge businesses with real growth opportunities through manually verified leads, strategic outreach and targeted campaigns worldwide.
 </p>
+<div class="about-grid">
+
+<div class="about-text">
+<h3>Helping Businesses Scale With Verified Opportunities</h3>
+
+<p>
+GrowthBrige helps businesses generate high-intent leads through manual prospect research, strategic outreach and targeted campaigns.
+</p>
+
+<p>
+We focus on quality over quantity — delivering verified contacts, real decision-makers and growth opportunities across multiple industries worldwide.
+</p>
+
+<a href="#contact" class="btn btn-primary">Get Free Consultation</a>
+</div>
+
+<div class="about-stats">
+
+<div class="stat-card">
+<h3>10K+</h3>
+<p>Verified Leads Delivered</p>
+</div>
+
+<div class="stat-card">
+<h3>15+</h3>
+<p>Industries Served</p>
+</div>
+
+<div class="stat-card">
+<h3>Global</h3>
+<p>Business Outreach</p>
+</div>
+
+<div class="stat-card">
+<h3>Fast</h3>
+<p>Turnaround Time</p>
+</div>
+
+</div>
+</div>
+
+
 </section>
 
 <section id="why">
