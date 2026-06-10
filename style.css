@@ -2071,7 +2071,7 @@ footer .col-md-3{
     }
 
     footer .d-flex{
-        align-items:center;
+        align-items:start;
     }
 
     footer hr{
