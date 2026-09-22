@@ -2089,4 +2089,149 @@ footer a{
     display:inline-block;
     padding:4px 0;
 }
+/* =========================
+   GROWTHBRIGE FAQ SECTION
+   ========================= */
 
+.growthbrige-faq {
+    padding: 55px 0 25px !important;
+    background: transparent;
+}
+
+.growthbrige-faq .faq-label {
+    color: #22c55e;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.growthbrige-faq .faq-title {
+    color: #0f172a;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.growthbrige-faq .faq-subtitle {
+    color: #64748b;
+    font-size: 17px;
+    margin: 0 auto;
+}
+
+/* FAQ accordion width */
+.growthbrige-accordion {
+    max-width: 950px;
+    margin: 40px auto 0;
+}
+
+/* Individual FAQ */
+.growthbrige-accordion .accordion-item {
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 14px !important;
+    margin-bottom: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+    transition: all 0.3s ease;
+}
+
+.growthbrige-accordion .accordion-item:hover {
+    border-color: rgba(34, 197, 94, 0.35);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* Question */
+.growthbrige-accordion .accordion-button {
+    background: #ffffff;
+    color: #0f172a;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 20px 24px;
+    box-shadow: none !important;
+}
+
+/* Remove Bootstrap blue background */
+.growthbrige-accordion .accordion-button:not(.collapsed) {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* Green focus/open border */
+.growthbrige-accordion .accordion-button:not(.collapsed) {
+    border-left: 4px solid #22c55e;
+}
+
+/* Arrow */
+.growthbrige-accordion .accordion-button::after {
+    filter: none;
+    transition: transform 0.3s ease;
+}
+
+.growthbrige-accordion .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
+
+/* Answer */
+.growthbrige-accordion .accordion-body {
+    background: #ffffff;
+    color: #475569;
+    font-size: 15.5px;
+    line-height: 1.8;
+    padding: 0 24px 22px 28px;
+}
+
+/* Highlight important text */
+.growthbrige-accordion .accordion-body strong {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+/* Reduce unnecessary gap before stats */
+.growthbrige-faq + .about-stats {
+    margin-top: 0 !important;
+    padding-top: 25px !important;
+}
+
+/* =========================
+   FAQ MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .growthbrige-faq {
+        padding: 45px 20px 20px !important;
+    }
+
+    .growthbrige-faq .faq-title {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .growthbrige-faq .faq-subtitle {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .growthbrige-accordion {
+        margin-top: 30px;
+    }
+
+    .growthbrige-accordion .accordion-button {
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 17px 18px;
+    }
+
+    .growthbrige-accordion .accordion-body {
+        font-size: 14px;
+        line-height: 1.7;
+        padding: 0 18px 20px 22px;
+    }
+
+    .growthbrige-accordion .accordion-button:not(.collapsed) {
+        border-left: 3px solid #22c55e;
+    }
+
+}
